@@ -4,7 +4,7 @@ export default function Promo() {
   return (
     <div className="relative w-full h-full flex flex-col tabletMinWidth:flex-row">
       <div className="">
-        <img src="../../../public/img/image-6.jpg" alt="" />
+        <img src="/img/image-6.jpg" alt="" />
       </div>
 
       <div className="relative bg-[#ffffff] shadow-xl inset-0 text-[#000000] gap-3 py-5 pl-5 z-[20] flex flex-col justify-center desktopMinWidth:px-14">

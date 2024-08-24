@@ -1,11 +1,11 @@
 import { IoStarSharp } from 'react-icons/io5';
 
 const ProducPic1 = () => {
-  return <img src="../../../public/img/product-1.jpg" alt="" />;
+  return <img src="/img/product-1.jpg" alt="" />;
 };
 
 const ProducPic2 = () => {
-  return <img src="../../../public/img/product-2.jpg" alt="" />;
+  return <img src="/img/product-2.jpg" alt="" />;
 };
 
 const productsList = [

@@ -8,7 +8,7 @@ export default function VideoSlogan() {
         className="absolute w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] "
         width={1000}
         height={1000}
-        src="../../../public/videos/sequence 3.mp4"
+        src="/videos/sequence 3.mp4"
         autoPlay
         loop
         muted
