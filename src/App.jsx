@@ -1,7 +1,6 @@
-import Children from './components/Children';
-import Container from './components/Container';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Children from "./components/Children";
+import Container from "./components/Container";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <Container>
         <Header />
         <Children />
-        <Footer />
       </Container>
     </>
   );

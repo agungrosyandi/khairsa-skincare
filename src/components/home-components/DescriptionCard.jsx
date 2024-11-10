@@ -7,7 +7,7 @@ export function ContainerCard({ children }) {
 }
 
 export function H5Title({ children }) {
-  return <h5 className="font-RobotoFont text-sm">{children}</h5>;
+  return <h5 className="font-RobotoFont text-xs tabletMinWidth:text-base">{children}</h5>;
 }
 
 export function ContainerSub({ children }) {
@@ -15,5 +15,5 @@ export function ContainerSub({ children }) {
 }
 
 export function H5Sub({ children }) {
-  return <h5 className="font-RobotoFont text-xs">{children}</h5>;
+  return <h5 className="font-RobotoFont text-xs tabletMinWidth:text-xl">{children}</h5>;
 }

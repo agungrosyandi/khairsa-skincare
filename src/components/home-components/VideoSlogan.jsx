@@ -1,11 +1,12 @@
-import DescriptionTitle from './DescriptionTitle';
-import VideoContainer from './VideoContainer';
+import DescriptionTitle from "./DescriptionTitle";
+import H1Title from "./H1Title";
+import VideoContainer from "./VideoContainer";
 
 export default function VideoSlogan() {
   return (
     <VideoContainer>
       <video
-        className="absolute w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] hidden desktopMinWidth:block "
+        className="absolute w-full h-screen pt-[10vh] shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] hidden desktopMinWidth:block "
         width={1000}
         height={1000}
         src="/videos/sequence 3.mp4"
@@ -17,22 +18,19 @@ export default function VideoSlogan() {
       />
       <>
         <img
-          className="absolute w-full h-full shadow-xl object-cover left-0 right-0 top-0 bottom-0 z-[2] desktopMinWidth:hidden "
-          src="/img/bg-mobile promo khairaskincare.jpg"
+          className="absolute w-full h-[90vh] top-[10vh] shadow-xl object-cover inset-0 z-[2] desktopMinWidth:hidden "
+          src="/img/pic-1-slogan.jpg"
           alt="mobile bakground"
         />
-        <div className="absolute z-10 inset-0 backdrop-opacity-10 backdrop-invert bg-black/5 w-full h-full desktopMinWidth:hidden"></div>
+        <div className="absolute z-10 inset-0 backdrop-opacity-10 backdrop-invert bg-black/20 w-full h-[90vh] top-[10vh] desktopMinWidth:hidden"></div>
       </>
 
-      <div className="relative bg-[#222831]/10 text-[#ffffff] z-[20] w-full h-full flex flex-col justify-center items-center text-center">
-        <h1 className=" font-RobotoFont text-lg font-bold px-10 tabletMinWidth:text-2xl desktopMinWidth:text-3xl fullHdMinWidth:text-4xl">
-          Tampil Percaya diri dengan Perawatan yang Maksimum
-        </h1>
+      <div className="relative pt-[10vh] bg-[#222831]/10 text-[#ffffff] px-[5%] gap-5 z-[20] w-full h-[90vh] top-[10vh] flex flex-col justify-center items-center text-center desktopMinWidth:px-[25%] fullHdMinWidth:px-[30%]">
+        <H1Title>Tampil Percaya diri</H1Title>
         <DescriptionTitle>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          euismod augue a nunc rhoncus, non commodo turpis fermentum.
+          Memiliki wajah yang bersih dan cerah membuat kepercayaan diri semakin
+          pede. Terutama dalam menjalani aktivitas mu sehari-hari
         </DescriptionTitle>
-        <p className=" font-RobotoFont text-[#d2d2d2] text-xs px-14 mt-2 tabletMinWidth:px-20 desktopMinWidth:px-64 fullHdMinWidth:text-base fullHdMinWidth:px-96"></p>
       </div>
     </VideoContainer>
   );

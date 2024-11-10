@@ -5,13 +5,13 @@
 /* default settings */
 
 @font-face {
-  font-family: 'DrukBoldTrial';
-  src: url('../fonts//Druk-Bold-Trial.otf') format('opentype');
+  font-family: "DrukBoldTrial";
+  src: url("../fonts//Druk-Bold-Trial.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'DrukMediumTrial';
-  src: url('../fonts//Druk-Medium-Trial.otf') format('opentype');
+  font-family: "DrukMediumTrial";
+  src: url("../fonts//Druk-Medium-Trial.otf") format("opentype");
 }
 
 :root {
@@ -31,4 +31,19 @@
 
 body {
   overflow-x: hidden;
+}
+
+/* smooth scrool snap  ------------------------------------------*/
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  scroll-snap-align: start;
 }

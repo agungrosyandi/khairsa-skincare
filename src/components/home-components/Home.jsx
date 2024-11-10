@@ -1,49 +1,42 @@
-import { IoIosArrowDropright } from 'react-icons/io';
-
-import Card1 from './Card1';
-import Card2 from './Card2';
-import Card3 from './Card3';
-import VideoHomeBackground from './VideoHomeBackground';
-import VideoSlogan from './VideoSlogan';
-
-import { productsList } from '../home-components/Product';
-import Product from '../home-components/Product';
-import Promo from './Promo';
-import Order from './Order';
+import VideoHomeBackground from "./VideoHomeBackground";
+import VideoSlogan from "./VideoSlogan";
+import { productsListPage2 } from "../home-components/CardPage2";
+import Promo from "./Promo";
+import Order from "./Order";
+import CardPage2 from "./CardPage2";
+import SectionParent from "./SectionParent";
+import BestSeller from "./BestSeller";
 
 export default function Home() {
   return (
-    <section className="relative flex flex-col gap-3">
-      <VideoHomeBackground />
-      <div className="grid grid-cols-6 grid-flow-row gap-3">
-        <Card1 />
-        <Card2 />
-        <Card3 />
-      </div>
-      <VideoSlogan />
-      <div className="flex justify-between items-center">
-        <h1 className="font-RobotoFont font-bold text-base tabletMinWidth:text-xl fullHdMinWidth:text-3xl">
-          Our Best Seller
-        </h1>
-        <div className="flex gap-2 items-center">
-          <IoIosArrowDropright />
-          <p className="font-RobotoFont text-xs fullHdMinWidth:text-base">
-            Liat Semua Produk
-          </p>
+    <main className="relative flex flex-col gap-0">
+      <SectionParent>
+        <VideoHomeBackground />
+      </SectionParent>
+      <SectionParent>
+        <div className="relative w-full h-screen pt-[10vh] grid grid-cols-6 grid-flow-row gap-1 desktopMinWidth:grid-cols-8">
+          {productsListPage2.map((product) => (
+            <CardPage2
+              key={product.id}
+              image={product.image}
+              title={product.title}
+              titleButton={product.titleButton}
+            />
+          ))}
         </div>
-      </div>
-      <div className="grid grid-cols-8 grid-flow-row gap-3">
-        {productsList.map((produk) => (
-          <Product
-            key={produk.id}
-            image={produk.image}
-            title={produk.title}
-            button={produk.button}
-          />
-        ))}
-      </div>
-      <Promo />
-      <Order />
-    </section>
+      </SectionParent>
+      <SectionParent>
+        <VideoSlogan />
+      </SectionParent>
+      <SectionParent>
+        <BestSeller />
+      </SectionParent>
+      <SectionParent>
+        <Promo />
+      </SectionParent>
+      <SectionParent>
+        <Order />
+      </SectionParent>
+    </main>
   );
 }

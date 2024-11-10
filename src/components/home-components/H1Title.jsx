@@ -1,6 +1,6 @@
 export default function H1Title({ children }) {
   return (
-    <h1 className="font-DrukMediumTrial text-4xl px-20 tabletMinWidth:text-5xl fullHdMinWidth:text-7xl">
+    <h1 className="font-DrukMediumTrial text-6xl px-10 tabletMinWidth:text-6xl desktopMinWidth:text-7xl">
       {children}
     </h1>
   );
