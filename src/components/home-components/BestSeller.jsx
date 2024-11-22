@@ -15,7 +15,7 @@ export default function BestSeller() {
 
       <div className="relative flex justify-between items-center text-center w-full h-full bg-[#222831]/10 desktopMinWidth:bg-[#222831]/0 ">
         <div className="flex gap-5 flex-col w-full text-white desktopMinWidth:text-black">
-          <H1Title>Our Best Seller Product</H1Title>
+          <H1Title>Our Product</H1Title>
           <div className="flex gap-2 justify-center">
             <IoStarSharp size={20} />
             <IoStarSharp size={20} />

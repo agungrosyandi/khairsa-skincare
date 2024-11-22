@@ -15,7 +15,7 @@ export default function Promo() {
 
       <div className="relative flex justify-between items-center text-center w-full h-full bg-[#222831]/10 px-[5%] desktopMinWidth:bg-[#222831]/0 desktopMinWidth:px-[10%] decoration-slicepx-[15%] ">
         <div className="flex gap-5 flex-col w-full text-white desktopMinWidth:text-black">
-          <H1Title>Promo terbaik</H1Title>
+          <H1Title>Get Promo</H1Title>
 
           <DescriptionTitle>
             Untuk perawatan maksimal rekomendasi kami mendapatkan 1 set produk

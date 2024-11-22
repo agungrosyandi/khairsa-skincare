@@ -1,5 +1,5 @@
-import Home from "./home-components/Home";
 import { useEffect } from "react";
+import MainHome from "../pages/MainHome";
 
 export default function Children() {
   const smoothScroolSnap = () => {
@@ -22,5 +22,5 @@ export default function Children() {
     smoothScroolSnap();
   }, []);
 
-  return <Home />;
+  return <MainHome />;
 }

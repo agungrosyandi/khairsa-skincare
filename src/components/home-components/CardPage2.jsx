@@ -1,17 +1,20 @@
 import { IoIosArrowDropright } from "react-icons/io";
 import { ContainerCard, H5Title, ContainerSub, H5Sub } from "./DescriptionCard";
+import { Link } from "react-router-dom";
 
-export default function CardPage2({ image, title, titleButton }) {
+export default function CardPage2({ image, title, titleButton, link }) {
   return (
     <div className="relative w-full h-full col-span-3 desktopMinWidth:col-span-2">
-      <div className="relative w-full h-full">{image}</div>
-      <ContainerCard>
-        <H5Title>{title}</H5Title>
-        <ContainerSub>
-          <IoIosArrowDropright />
-          <H5Sub>{titleButton}</H5Sub>
-        </ContainerSub>
-      </ContainerCard>
+      <Link to={link}>
+        <div className="relative w-full h-full">{image}</div>
+        <ContainerCard>
+          <H5Title>{title}</H5Title>
+          <ContainerSub>
+            <IoIosArrowDropright />
+            <H5Sub>{titleButton}</H5Sub>
+          </ContainerSub>
+        </ContainerCard>
+      </Link>
     </div>
   );
 }
@@ -62,24 +65,28 @@ const productsListPage2 = [
     image: <Image1Page2 />,
     title: "#Days Activity",
     titleButton: "Explore",
+    link: "/Artikel",
   },
   {
     id: 2,
     image: <Image2Page2 />,
     title: "#Wash Moisturizer",
     titleButton: "Explore",
+    link: "/Artikel",
   },
   {
     id: 3,
     image: <Image3Page2 />,
     title: "#Woman Style",
     titleButton: "Explore",
+    link: "/Artikel",
   },
   {
     id: 4,
     image: <Image4Page2 />,
     title: "#Become Trendsetter",
     titleButton: "Explore",
+    link: "/Artikel",
   },
 ];
 
