@@ -26,7 +26,7 @@ export default function VideoSlogan() {
       </>
 
       <div className="relative pt-[10vh] bg-[#222831]/10 text-[#ffffff] px-[5%] gap-5 z-[20] w-full h-[90vh] top-[10vh] flex flex-col justify-center items-center text-center desktopMinWidth:px-[25%] fullHdMinWidth:px-[30%]">
-        <H1Title>Confident</H1Title>
+        <H1Title>Make you Confident</H1Title>
         <DescriptionTitle>
           Memiliki wajah yang bersih dan cerah membuat kepercayaan diri semakin
           pede. Terutama dalam menjalani aktivitas mu sehari-hari

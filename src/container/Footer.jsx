@@ -14,7 +14,7 @@ export default function Footer() {
         <Link to={"/About"}>
           <li>Owner</li>
         </Link>
-        <Link>
+        <Link to={"https://www.instagram.com/key_skincare01/"} target="blank">
           <li>Instagram</li>
         </Link>
       </ul>
